@@ -9,7 +9,7 @@
 
 main:
   - title: "Publications and Books"
-    url: "https://scholar.google.com/citations?user=7I5sSqQAAAAJ&hl=en&oi=ao"
+    url: /publications/
     
   
   - title: "Research"
