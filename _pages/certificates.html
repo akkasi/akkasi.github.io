@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Certificates — Abbas Akkasi</title>
+  <style>
+    :root{
+      --accent:#0b66c3;
+      --muted:#6b7280;
+      --maxw:1100px;
+      --card-bg:#ffffff;
+    }
+    body{
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color:#111827;
+      background:#f7fafc;
+      margin:0;
+      padding:24px 16px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      background:var(--card-bg);
+      padding:28px;
+      border-radius:10px;
+      box-shadow:0 6px 20px rgba(16,24,40,0.06);
+    }
+    header{display:flex;align-items:baseline;gap:16px;margin-bottom:18px;}
+    h1{font-size:1.6rem;margin:0}
+    .subtitle{color:var(--muted);font-size:0.95rem}
+    h2{margin-top:1.4rem;color:var(--accent);font-size:1.05rem;border-bottom:2px solid #e6edf8;padding-bottom:6px}
+
+    /* Certificate grid: 2 per row */
+    .cert-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:24px;
+      margin-top:16px;
+    }
+    .cert-card{
+      background:#fff;
+      border:1px solid #eef2f7;
+      padding:12px;
+      border-radius:8px;
+      box-shadow:0 1px 3px rgba(0,0,0,0.06);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    .cert-title{font-weight:600;font-size:1rem;text-align:center;margin-bottom:4px}
+    .cert-meta{color:var(--muted);font-size:0.88rem;text-align:center;margin-bottom:10px}
+    .cert-card img{
+      width:100%;
+      height:auto;
+      object-fit:cover;
+      border-radius:6px;
+      background:#f5f7fb;
+    }
+    .cert-comment{
+      margin-top:14px;
+      min-height:40px; /* reserved space for comments */
+      font-size:0.9rem;
+      color:#374151;
+      text-align:left;
+      width:100%;
+      border-top:1px dashed #e5e7eb;
+      padding-top:8px;
+    }
+    footer{margin-top:28px;color:var(--muted);font-size:0.9rem;border-top:1px solid #f0f3f7;padding-top:12px}
+    @media (max-width:700px){
+      .cert-grid{grid-template-columns:1fr;} /* stack on small screens */
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="page-title">
+    <header>
+      <div>
+        <h1 id="page-title">Selected Professional Training and Certifications</h1>
+        <div class="subtitle"></div>
+      </div>
+    </header>
+
+    <!-- Certificates Section -->
+    <section aria-labelledby="certificates">
+      <h2 id="certificates"></h2>
+
+      <div class="cert-grid">
+        <!-- Example certificate cards -->
+        <div class="cert-card">
+          <div class="cert-title">University Teaching</div>
+          <div class="cert-meta">Carleton University, Canada · 2024</div>
+          <img src="images/UniversityTeaching.png" alt="Certificate 1" />
+          <div class="cert-comment">The University Teaching course at Carleton University is a Certificate in University Teaching (CUT) program designed to enhance teaching skills and understanding of pedagogy.
+                                     The program is a 10-week blended format that includes weekly asynchronous online lessons and synchronous meetings, along with two assessments. 
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">IBM Generative AI Engineering</div>
+          <div class="cert-meta">Coursera · 2025</div>
+          <img src="images/IBM.png" alt="Certificate 2" />
+          <div class="cert-comment">Approximately 6 months at 6 hours a week to complete. The IBM Generative AI Engineering Professional Certificate gives aspiring gen AI engineers, AI developers, data scientists, machine learning engineers, and AI research engineers the essential skills in gen AI, large language models (LLMs), and natural language processing (NLP) required to catch the eye of an employer.  </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">AI for Grant Writing</div>
+          <div class="cert-meta">Kennesaw State University · 2025</div>
+          <img src="images/Grant.png" alt="Certificate 3" />
+          <div class="cert-comment">This course is designed to help learners leverage generative
+             AI tools like to streamline and enhance the grant writing process. The skills covered in course include:
+            Skills Covered: Prompt Engineering , Ethical Standards and Conduct,
+             Artificial Intelligence, Proposal Writing, Grant Writing, Business Writing.</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-title">Explainable AI</div>
+          <div class="cert-meta">Udemy· 2023</div>
+          <img src="images/XAI.png" alt="Certificate 4" />
+          <div class="cert-comment">Explainable AI (XAI) refers to techniques and methods that make the decisions and behavior of artificial intelligence systems understandable to humans.</div>
+        </div>
+         <div class="cert-card">
+          <div class="cert-title">European Summer School in Logic, Language and Information</div>
+          <div class="cert-meta">Sofia, Bulgaria · 2018</div>
+          <img src="images/ESSLLI.png" alt="Certificate 4" />
+          <div class="cert-comment">The European Summer School in Logic, Language and Information (ESSLLI) is an annual, interdisciplinary event that offers a wide range of courses and workshops at the intersection of: Logic and Computation, Language and Computation, and Logic and Language</div>
+        </div>
+         <div class="cert-card">
+          <div class="cert-title">Interactive Data Visualization With Bokeh</div>
+          <div class="cert-meta">DataCamp· 2018</div>
+          <img src="images/Visualization.png" alt="Certificate 4" />
+          <div class="cert-comment">Bokeh is an open-source Python library designed for creating interactive and visually appealing data visualizations that can be easily embedded in web applications or Jupyter notebooks</div>
+        </div>
+      </div>
+    </section>
+
+    
+  </div>
+</body>
+</html>
