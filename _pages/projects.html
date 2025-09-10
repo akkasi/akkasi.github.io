@@ -1,0 +1,153 @@
+---
+layout: archive
+title: ""
+permalink: /projects/
+author_profile: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Abbas Akkasi</title>
+  <style>
+    :root{
+      --accent:#0b66c3;
+      --muted:#6b7280;
+      --maxw:1100px;
+      --card-bg:#ffffff;
+    }
+    body{
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color:#111827;
+      background:#f7fafc;
+      margin:0;
+      padding:24px 16px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      background:var(--card-bg);
+      padding:28px;
+      border-radius:10px;
+      box-shadow:0 6px 20px rgba(16,24,40,0.06);
+    }
+    header{display:flex;align-items:baseline;gap:16px;margin-bottom:18px;}
+    h1{font-size:1.6rem;margin:0}
+    .subtitle{color:var(--muted);font-size:0.95rem}
+    h2{margin-top:1.4rem;color:var(--accent);font-size:1.05rem;border-bottom:2px solid #e6edf8;padding-bottom:6px}
+
+    /* Project cards */
+    .projects-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:22px;
+      margin-top:16px;
+    }
+    .project-card{
+      background:#fff;
+      border:1px solid #eef2f7;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
+    }
+    .project-title{font-weight:700;font-size:1.05rem;margin-bottom:6px;color:#0b66c3}
+    .project-tech{font-size:0.9rem;color:#374151;margin-bottom:10px}
+    .project-tech strong{color:#111827}
+    .project-details{margin:0;padding-left:20px}
+    .project-details li{margin-bottom:6px;font-size:0.92rem;color:#1f2937}
+    footer{margin-top:28px;color:var(--muted);font-size:0.9rem;border-top:1px solid #f0f3f7;padding-top:12px}
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="page-title">
+    <header>
+      <div>
+        <h1 id="page-title">Selected AI & ML Projects</h1>
+        <div class="subtitle"></div>
+      </div>
+    </header>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects"></h2>
+
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <div class="project-title">Academic Accommodation Recommendation Engine</div>
+          <div class="project-tech"><strong>Technologies:</strong> Python, PyTorch, LangChain, Azure AI, Prompt Engineering, LM Studio</div>
+          <ul class="project-details">
+            <li>Designed and built a <strong>Retrieval-Augmented Generation (RAG)</strong> system to recommend personalized academic accommodations for students.</li>
+            <li>Integrated Azure AI Services for secure, scalable deployment.</li>
+            <li><strong>Improved recommendation relevance by 12%</strong> compared to rule-based methods; provides interpretability by explaining rationale.</li>
+            <li>Under <strong>deployment by Carleton University</strong> (Fall 2025).</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Banking Customer Service Chatbot with Agentic RAG</div>
+          <div class="project-tech"><strong>Technologies:</strong> RAG, LlamaIndex, Open-Source LLMs, LangGraph, LangChain, Vector Databases</div>
+          <ul class="project-details">
+            <li>Built and deployed an RAG-based chatbot to handle general banking queries, reducing call center workload by 23%.</li>
+            <li>Implemented context-aware retrieval to ensure accurate and compliant answers.</li>
+            <li>Deployed by a Private Bank, Iran.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Deep Learning-Based ICD Coding of Clinical Records</div>
+          <div class="project-tech"><strong>Technologies:</strong> Python, TensorFlow, CNN, RNN, Hierarchical Classification</div>
+          <ul class="project-details">
+            <li>Evaluated and benchmarked deep learning models for automated multi-label classification of discharge summaries.</li>
+            <li>Integrated hierarchical ICD code structure into model design, boosting accuracy.</li>
+            <li>Applied few-shot learning with category description vectors.</li>
+            <li>Performance improved by 7% over traditional ML/DL methods.</li>
+            <li><strong>Deployed</strong> as part of HMS at <strong>University Hospital, Leuven, Belgium</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Automated Skill Network Generator for Job Descriptions</div>
+          <div class="project-tech"><strong>Technologies:</strong> AWS SageMaker, Python, TensorFlow, LIME, spaCy, Multi-Task Learning</div>
+          <ul class="project-details">
+            <li>Built an <strong>end-to-end AWS SageMaker pipeline</strong> to parse job descriptions and build skill graphs.</li>
+            <li>Applied ensemble learning and transformer-based NER for improved skill extraction.</li>
+            <li>Annotated custom dataset of 22,000 job postings across 22 IT roles.</li>
+            <li>Incorporated LIME explainability for interpretable predictions.</li>
+            <li>Achieved F1-scores of 72% (technical) and 67% (non-technical).</li>
+            <li>Deployed as part of the <strong>Skills Cloud system by Begreator startup</strong>, Belgium.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Prompt-Optimized Text Summarization Evaluator</div>
+          <div class="project-tech"><strong>Technologies:</strong> HuggingFace Transformers, Prompt Engineering, LangChain, LlamaIndex</div>
+          <ul class="project-details">
+            <li>Designed a summary evaluation framework using Chain-of-Thought and Tree-of-Thoughts prompting.</li>
+            <li>Achieved more consistent evaluation than ROUGE/BLEU with semantic similarity checks.</li>
+            <li>Showed feasibility of evaluating summaries without ground truth.</li>
+            <li>Won the <strong>Best Solution Award</strong> at the 4th ACM Workshop on NLP Systems Evaluation.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Multimodal Visual Question Answering System</div>
+          <div class="project-tech"><strong>Technologies:</strong> BLIP-2, PEFT, LORA, Vision-Language Models, Multimodal AI, LangChain</div>
+          <ul class="project-details">
+            <li>Built a parameter-efficient fine-tuned VQA pipeline combining vision-language models with LLM reasoning.</li>
+            <li>Developed a dual adapter architecture (CLIP-Adapter + Task-Residual).</li>
+            <li>Integrated LLM to generate attribute-specific prompts and context-aware descriptions.</li>
+            <li>Achieved SOTA results on 11 benchmark datasets and 5 few-shot settings.</li>
+            <li>Applications include medical imaging and personalized AI.</li>
+            <li>Published in <em>International Journal of Computational Intelligence Systems</em>.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    
+  </div>
+</body>
+</html>
