@@ -1,12 +1,246 @@
 ---
 layout: archive
-title: "Teaching"
+title: ""
 permalink: /teaching/
 author_profile: true
 ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teaching — Abbas Akkasi</title>
+  <style>
+    :root{
+      --accent:#0b66c3;
+      --muted:#666;
+      --card-bg: #fafafa;
+      --maxw: 900px;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body{margin:0;background:#fff;color:#111;line-height:1.45}
+    header{
+      background:linear-gradient(90deg, rgba(11,102,195,0.05), rgba(11,102,195,0.02));
+      border-bottom:1px solid #eee;
+      padding:28px 16px;
+    }
+    .container{max-width:var(--maxw);margin:28px auto;padding:0 16px;}
+    h1{margin:0;font-size:1.6rem}
+    .role{color:var(--muted);margin-top:6px;font-size:0.95rem}
+    .institution{margin-top:20px;border-top:1px solid #eee;padding-top:18px}
+    .inst-title{font-weight:700;color:var(--accent);font-size: 1.8em;display: flex; align-items: center;}
+    .inst-logo {
+            width: 100px;
+            height: auto;
+            margin-right: 12px;
+  }
+    .course{
+      background:var(--card-bg);
+      border:1px solid #eee;
+      padding:12px 14px;
+      margin:12px 0;
+      border-radius:8px;
+    }
+    .course h3{margin:0 0 6px 0;font-size:1rem}
+    .term{font-size:0.88rem;color:var(--muted);margin-bottom:8px}
+    ul.topics{margin:0;padding-left:1.15rem}
+    footer{color:var(--muted);font-size:0.88rem;margin:36px 0 60px 0}
+    a{color:var(--accent);text-decoration:none}
+    @media (max-width:560px){
+      .container{padding:0 12px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Selected Courses and Topics Taught.</h1>
+      
+    </div>
+  </header>
 
-{% include base_path %}
+  <main class="container">
+    <!-- Carleton University -->
+    <section class="institution">
+      <div class="inst-title">
+        <img src="https://ires.ubc.ca/files/2020/08/carleton-university-boot-camp-logo.png" alt="Carleton University logo" class="inst-logo" />
+        Carleton University — Ottawa, Canada
+    </div>
+      <div class="term">Fall 2025</div>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+      <div class="course">
+        <h3>Introduction to Deep Learning</h3>
+        <div class="term">Undergraduate / Introductory</div>
+        <ul class="topics">
+          <li>Introduction to Deep Learning</li>
+<li>Mathematics for Machine Learning / Deep Learning</li>
+<li>Basics of Machine Learning</li>
+<li>Introduction to Neural Networks</li>
+<li>Deep Neural Networks</li>
+<li>Optimization Algorithms (SGD, RMSprop, Adam)</li>
+<li>Hyperparameter Tuning</li>
+<li>Convolutional Neural Networks (CNNs)</li>
+<li>Recurrent Neural Networks (RNNs)</li>
+<li>LSTM and GRU</li>
+<li>Deep Generative Models (Autoencoders and GANs)</li>
+<li>Attention Mechanisms</li>
+ </ul>
+      </div>
+    </section>
+
+    <!-- Algonquin College -->
+    <section class="institution">
+      <div class="inst-title">
+        <img src="https://smartcdn.gprod.postmedia.digital/ottawacitizen/wp-content/uploads/2018/06/algonquin-saudi-campus-best-1-cmyk.jpg" alt="Carleton University logo" class="inst-logo" />
+        Algonquin College — Ottawa, Canada
+    </div>
+      <div class="term">Summer 2025</div>
+
+      <div class="course">
+        <h3>Natural Language Processing (NLP)</h3>
+        <div class="term">Applied Undergraduate</div>
+        <ul class="topics">
+          <li>Text preprocessing: tokenization, normalization, stopwords</li>
+          <li>Word representations: one-hot, TF–IDF, word embeddings (word2vec, GloVe)</li>
+          <li>Sequence modeling: RNNs, LSTM, GRU (concepts & limitations)</li>
+          <li>Transformers: attention mechanism, encoder/decoder overview</li>
+          <li>Language models: n-grams to pretrained LM (BERT/GPT high-level)</li>
+          <li>Common NLP tasks: classification, NER, POS tagging, QA, summarization</li>
+          <li>Evaluation metrics: BLEU, ROUGE, accuracy, F1</li>
+          <li>Practical pipelines: data labeling, fine-tuning pretrained models</li>
+          <li>Ethics & bias in NLP</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Istanbul Gelisim University -->
+    <section class="institution">
+      <div class="inst-title">
+        <img src="https://brive.com/media/eduCenterImages/istanbul-gelisim-university.jpg" alt="Carleton University logo" class="inst-logo" />
+        Istanbul Gelişim University — Istanbul, Turkey
+    </div>
+      <div class="term">Fall & Winter 2022–2023</div>
+
+      <div class="course">
+        <h3>Data Mining</h3>
+        <div class="term">Graduate</div>
+        <ul class="topics">
+          <li>Data preprocessing & cleaning</li>
+          <li>Exploratory data analysis and visualization</li>
+          <li>Supervised learning: decision trees, random forests</li>
+          <li>Unsupervised learning: clustering (k-means, hierarchical)</li>
+          <li>Association rules (Apriori) and pattern discovery</li>
+          <li>Evaluation: cross-validation, precision/recall, ROC</li>
+          <li>Scalability & basic big-data considerations</li>
+        </ul>
+      </div>
+
+      <div class="course">
+        <h3>Object Oriented Programming</h3>
+        <div class="term">Undergraduate</div>
+        <ul class="topics">
+          <li>OOP principles: encapsulation, inheritance, polymorphism</li>
+          <li>Classes, objects, methods, constructors/destructors</li>
+          <li>Design patterns (intro): factory, singleton, strategy</li>
+          <li>Exception handling and resource management</li>
+          <li>Unit testing basics and code organization</li>
+          <li>Practical programming assignments (language-specific)</li>
+        </ul>
+      </div>
+
+      <div class="course">
+        <h3>AI for Business</h3>
+        <div class="term">Undergraduate / Applied</div>
+        <ul class="topics">
+          <li>AI concepts and business use-cases</li>
+          <li>Data-driven decision making and KPIs</li>
+          <li>Supervised models for forecasting & classification</li>
+          <li>Intro to recommendation systems and customer analytics</li>
+          <li>Model deployment basics and production considerations</li>
+          <li>Ethics, privacy, and ROI of AI projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cyprus Science University -->
+    <section class="institution">
+      <div class="inst-title">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.3so0LolZG2ksZauMMwKoJQHaB-?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Carleton University logo" class="inst-logo" />
+        Cyprus Science University — Kyrenia, Cyprus
+    </div>
+      <div class="term">Fall 2021</div>
+
+      <div class="course">
+        <h3>Neural Networks</h3>
+        <div class="term">Undergraduate / Introductory</div>
+        <ul class="topics">
+          <li>Perceptron and multilayer networks</li>
+          <li>Activation functions and network architectures</li>
+          <li>Backpropagation derivation and practice</li>
+          <li>Training techniques and overfitting mitigation</li>
+          <li>Applications: classification, regression, simple vision tasks</li>
+        </ul>
+      </div>
+
+      <div class="course">
+        <h3>Machine Learning</h3>
+        <div class="term">Graduate</div>
+        <ul class="topics">
+          <li>Supervised learning: linear/logistic regression, SVM</li>
+          <li>Ensemble methods: bagging, boosting</li>
+          <li>Unsupervised learning: PCA, clustering</li>
+          <li>Model evaluation, bias–variance tradeoff</li>
+          <li>Feature engineering and pipelines</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Islamic Azad University -->
+    <section class="institution">
+      <div class="inst-title">
+        <img src="https://media.hamshahrionline.ir/d/2019/01/12/4/4309207.jpg" alt="Carleton University logo" class="inst-logo" />
+        Islamic Azad University — Iran
+    </div>
+      <div class="term">Fall & Winter 2020</div>
+
+      <div class="course">
+        <h3>Information Retrieval</h3>
+        <div class="term">Undergraduate</div>
+        <ul class="topics">
+          <li>Search architectures and indexing (inverted index)</li>
+          <li>Retrieval models: Boolean, vector space, BM25</li>
+          <li>Evaluation: precision, recall, MAP</li>
+          <li>Query processing, ranking, and basic NLP for IR</li>
+          <li>Web search basics and crawling/indexing concepts</li>
+        </ul>
+      </div>
+
+      <div class="course">
+        <h3>Metaheuristic Algorithms</h3>
+        <div class="term">Graduate</div>
+        <ul class="topics">
+          <li>Genetic algorithms and evolutionary strategies</li>
+          <li>Simulated annealing, tabu search</li>
+          <li>Particle swarm optimization</li>
+          <li>Applications to combinatorial & continuous optimization</li>
+          <li>Parameter tuning and hybrid strategies</li>
+        </ul>
+      </div>
+
+      <div class="course">
+        <h3>Data Mining</h3>
+        <div class="term">Graduate</div>
+        <ul class="topics">
+          <li>(See Data Mining above) — core topics tailored for local curriculum</li>
+          <li>Practical exercises: data preprocessing and pattern extraction</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <footer>
+      <div>Note: Page layout inspired by an academic teaching page template (structure inspected to match simple headings & course blocks). Source template inspected: Dr. Jie Gao — Teaching page.</div>
+      <div style="margin-top:8px">Template inspected: <a href="https://drjiegao.github.io//teaching/" target="_blank">drjiegao.github.io/teaching</a>. :contentReference[oaicite:1]{index=1}</div>
+    </footer> -->
+  </main>
+</body>
+</html>
