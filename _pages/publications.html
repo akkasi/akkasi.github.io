@@ -4,33 +4,392 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Publications — Abbas Akkasi</title>
+  <style>
+    :root{
+      --accent:#0b66c3;
+      --muted:#6b7280;
+      --maxw:1100px;
+      --card-bg:#ffffff;
+    }
+    body{
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color:#111827;
+      background:#f7fafc;
+      margin:0;
+      padding:24px 16px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:var(--maxw);margin:0 auto;background:var(--card-bg);padding:28px;border-radius:10px;box-shadow:0 6px 20px rgba(16,24,40,0.06);}
+    header{display:flex;align-items:baseline;gap:16px;margin-bottom:18px;}
+    h1{font-size:1.6rem;margin:0}
+    .subtitle{color:var(--muted);font-size:0.95rem}
+    h2{margin-top:1.4rem;color:var(--accent);font-size:1.05rem;border-bottom:2px solid #e6edf8;padding-bottom:6px}
+    ul.pub-list{list-style:none;padding-left:0;margin-top:12px}
+    ul.pub-list li{margin:0.85rem 0;padding-left:0}
+    li strong{font-weight:700}
+    em{font-style:italic;color:#0f172a}
+    .meta{color:var(--muted);font-size:0.95rem;margin-top:6px}
+    /* Books grid */
+    .books-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+      margin-top:12px;
+    }
+    .book-card{
+      display:flex;
+      gap:12px;
+      background:#fff;
+      border:1px solid #eef2f7;
+      padding:12px;
+      border-radius:8px;
+      align-items:flex-start;
+    }
+    .book-card img{
+      width:100px;
+      height:auto;
+      object-fit:cover;
+      border-radius:4px;
+      background:#f5f7fb;
+      box-shadow:0 1px 3px rgba(2,6,23,0.06);
+    }
+    .book-meta .title{font-weight:700;margin-bottom:6px}
+    .book-meta .meta{color:var(--muted);font-size:0.92rem;margin-bottom:6px}
+    .note{font-size:0.9rem;color:var(--muted);margin-top:18px}
+    footer{margin-top:28px;color:var(--muted);font-size:0.9rem;border-top:1px solid #f0f3f7;padding-top:12px}
+    a{color:var(--accent)}
+    @media (max-width:560px){
+      .container{padding:16px}
+      header{flex-direction:column;align-items:flex-start;gap:6px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="page-title">
+    <header>
+      <div>
+        <h1 id="page-title">Selected Publications</h1>
+      </div>
+    </header>
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+    <!-- Peer-Reviewed Journal Articles -->
+    <section aria-labelledby="journals">
+      <h2 id="journals">Peer-Reviewed Journal Articles</h2>
+      <ul class="pub-list">
+        <li>
+          Zarei, M. R., Akkasi, A., &amp; Komeili, M. (2025). Dual Adapter Tuning of Vision–Language Models Using Large Language Models.
+          <em>International Journal of Computational Intelligence Systems, 18</em>(1), 109. Springer.
+        </li>
 
-{% include base_path %}
+        <li>
+          Akkasi, A. (2024). Job description parsing with explainable transformer-based ensemble models to extract the technical and non-technical skills.
+          <em>Natural Language Processing Journal, 9</em>, 100102. https://doi.org/10.1016/j.nlp.2024.100102
+        </li>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+        <li>
+          Akkasi, A., &amp; Snajder, J. (2021). Word sense induction using leader-follower clustering of automatically generated lexical substitutes.
+          <em>Expert Systems with Applications, 181</em>, 115162.
+        </li>
 
+        <li>
+          Akkasi, A., &amp; Moens, M.-F. (2021). Causal relationship extraction from biomedical text using deep neural models: A comprehensive survey.
+          <em>Journal of Biomedical Informatics, 119</em>, 103820.
+        </li>
+
+        <li>
+          Moons, E., Khanna, A., Akkasi, A., &amp; Moens, M.-F. (2020). A comparison of deep learning methods for ICD coding of clinical records.
+          <em>Applied Sciences, 10</em>(15), 5262.
+        </li>
+
+        <li>
+          Akkasi, A., &amp; Varoğlu, E. (2019). Improvement of chemical named entity recognition through sentence-based random under-sampling and classifier combination.
+          <em>Journal of AI and Data Mining, 7</em>(2), 311–319.
+        </li>
+
+        <li>
+          Akkasi, A., Varoğlu, E., &amp; Dimililer, N. (2018). Balanced undersampling: a novel sentence-based undersampling method to improve recognition of named entities in chemical and biomedical text.
+          <em>Applied Intelligence, 48</em>(8), 1965–1978.
+        </li>
+
+        <li>
+          Akkasi, A., &amp; Varoğlu, E. (2016). Improving biochemical named entity recognition using PSO classifier selection and Bayesian combination methods.
+          <em>IEEE/ACM Transactions on Computational Biology and Bioinformatics, 14</em>(6), 1327–1338.
+        </li>
+
+        <li>
+          Akkasi, A., Varoğlu, E., &amp; Dimililer, N. (2016). ChemTok: A new rule-based tokenizer for chemical named entity recognition.
+          <em>BioMed Research International</em>, 2016, Article 4248026.
+        </li>
+
+        <li>
+          Harounabadi, M., Mitschele-Thiel, A., &amp; Akkasi, A. (2018). LTE-D2D for connected cars: a survey on radio resource management schemes.
+          <em>Iran Journal of Computer Science, 1</em>(3), 187–197.
+        </li>
+
+        <li>
+          Akkasi, A. (2018). Sentence-based undersampling for named entity recognition using genetic algorithm.
+          <em>Iran Journal of Computer Science, 1</em>(3), 165–174. DOI: 10.1007/s42044-018-0014-5.
+        </li>
+
+        <li>
+          Zarezade, S., Akkasi, A., Maher, A., &amp; Namdar, Y. (2015). Recognition of Farsi letter using Hidden Markov Model.
+          <em>International Journal of Computer Applications, 125</em>(1).
+        </li>
+
+        <li>
+          Asadi, M. H., Akkasi, A., Zargarpour, E., &amp; Mohammdi, Z. (2015). Diagnosis of mathematical symbols using Hidden Markov Model.
+          <em>International Journal of Computer Applications, 125</em>(1).
+        </li>
+
+        <li>
+          Sattari, S., Akkasi, A., Lari, R. A., &amp; Khodaparasti, M. (2015). Cryptography in social networks using wavelet transform, fractals and chaotic functions.
+          <em>International Research Journal of Applied and Basic Sciences</em>, 1627–1635.
+        </li>
+
+        <li>
+          Pishdar, M. A., &amp; Akkasi, A. (2015). Task scheduling and idle-time balancing in homogeneous multiprocessors: A comparison between GA and SA.
+          <em>International Journal of Computer Applications, 123</em>(13).
+        </li>
+
+        <li>
+          Akkasi, A., &amp; Zeinaly, M. A. (2015). Visualizing operating systems and Markov models.
+          <em>International Journal of Computer Applications, 119</em>(24).
+        </li>
+      </ul>
+    </section>
+
+    <!-- Conference & Workshop Proceedings -->
+    <section aria-labelledby="conferences">
+      <h2 id="conferences">Conference &amp; Workshop Proceedings</h2>
+      <ul class="pub-list">
+        <li>
+          Kevadiya, R., Akkasi, A., Fraser, K. C., Vukovic, B., Gunnell, J., Tanguay, S., &amp; Komeili, M. (2025).
+          Generalized Follow-Up WHODAS 2.0 Assessment Through Language Models and Adaptive Clustering Ensemble in Higher Education.
+          In <em>Proceedings of the 18th ACM International Conference on PErvasive Technologies Related to Assistive Environments (PETRA '25)</em>, 349–358.
+          https://doi.org/10.1145/3733155.3734900
+        </li>
+
+        <li>
+          Akkasi, A., Khan, A., Shaaban, M. A., Komeili, M., &amp; Yaqub, M. (2024).
+          iML at SemEval-2024 Task 2: Safe biomedical natural language inference for clinical trials with LLM-based ensemble inferencing.
+          In <em>Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval-2024)</em>, 170–174.
+        </li>
+
+        <li>
+          Akkasi, A., Fraser, K. C., &amp; Komeili, M. (2023). Reference-free summarization evaluation with large language models.
+          In <em>Proceedings of the 4th Workshop on Evaluation and Comparison of NLP Systems</em>, 193–201.
+        </li>
+
+        <li>
+          Akkasi, A. (2022). Multi-perspective scientific document summarization with graph attention networks (GATS).
+          In <em>Proceedings of the Third Workshop on Scholarly Document Processing</em>, 268–272.
+        </li>
+
+        <li>
+          Gluhak, M., Di Buono, M. P., Akkasi, A., Šnajder, J., et al. (2018). TakeLab at SemEval-2018 Task 7: Combining sparse and dense features for relation classification in scientific texts.
+          In <em>Proceedings of the 12th Workshop on Semantic Evaluation (SemEval-2018)</em>.
+        </li>
+
+        <li>
+          Akkasi, A., Shams, F., et al. (2008). Presenting a method for benchmarking application in the enterprise architecture planning process based on federal enterprise architecture framework.
+          In <em>2008 3rd International Conference on Information and Communication Technologies: From Theory to Applications</em>, 1–6. IEEE.
+        </li>
+
+        <li>
+          Akkasi, A., Khaleghi, A., Jafarabad, M., Karimi, H., Demideh, M. B., &amp; Alamuti, R. N. (2014).
+          The proposal of giving two receipts for voters to increase the security of electronic voting.
+          In <em>Computer Science &amp; Information Technology (CS &amp; IT) Conference Proceedings</em>.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Preprints / Under Review -->
+    <section aria-labelledby="preprints">
+      <h2 id="preprints">Preprints / Under Review</h2>
+      <ul class="pub-list">
+        <li>
+          Khan, A., Choubineh, A., Shaaban, M. A., Akkasi, A., &amp; Komeili, M. (2025).
+          TactileNet: Bridging the Accessibility Gap with AI-Generated Tactile Graphics for Individuals with Vision Impairment.
+          <em>arXiv preprint arXiv:2504.04722</em>.
+        </li>
+
+        <li>
+          Shaaban, M. A., Akkasi, A., Khan, A., Komeili, M., &amp; Yaqub, M. (2024).
+          Fine-tuned large language models for symptom recognition from Spanish clinical text.
+          <em>arXiv preprint arXiv:2401.15780</em>.
+        </li>
+
+        <li>
+          Dastjerdi, M. M. H., et al. (2025). End-to-End Semantically Aware Tactile Generation.
+          <em>Intelligent Systems With Applications</em> (under review).
+        </li>
+      </ul>
+    </section>
+
+    <!-- Thesis / Dissertation -->
+    <section aria-labelledby="thesis">
+      <h2 id="thesis">Thesis / Dissertation</h2>
+      <ul class="pub-list">
+        <li>
+          Akkasi, A. (2016). Chemical Named Entity Recognition using Undersampling and Classifier Ensembles.
+          Eastern Mediterranean University (Ph.D. dissertation).
+        </li>
+      </ul>
+    </section>
+
+    <!-- Books -->
+    <!-- <section aria-labelledby="books"> -->
+      <h2 id="books">Books</h2>
+
+      <p class="note">Add your books to the `books` array in the script below. For best results provide ISBNs (13- or 10-digit). If you already host cover images, use <code>coverUrl</code>.</p>
+
+      <div id="books-root" class="books-grid" aria-live="polite">
+        <!-- populated by script -->
+      </div>
+
+      <style>
+        .cover-loading { width:100px;height:150px;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:0.9rem;background:#f8fafc;border-radius:4px }
+      </style>
+
+      <script>
+      /*
+        Replace the entries in the `books` array below with your actual books.
+        Fields:
+         - title (required)
+         - authors (string)
+         - publisher (optional)
+         - year (optional)
+         - isbn (optional)  <-- preferred for accurate cover fetching
+         - coverUrl (optional) <-- direct link to an image you host
+      */
+      const books = [
+        // Example placeholders -- replace with your real books or ISBNs
+        {
+          title: "Example Book: Deep Learning Essentials",
+          authors: "A. Akkasi",
+          publisher: "Sample Publisher",
+          year: "2023",
+          isbn: ""  // e.g., "9783031936112"
+        },
+        {
+          title: "Example Book: NLP Applications",
+          authors: "A. Akkasi & Coauthor",
+          publisher: "Another Publisher",
+          year: "2021",
+          coverUrl: "" // e.g., "https://yourserver.com/covers/nlp_cover.jpg"
+        }
+      ];
+
+      async function fetchCoverByISBN(isbn) {
+        if (!isbn) return null;
+        // first try Open Library
+        const ol = 'https://covers.openlibrary.org/b/isbn/' + encodeURIComponent(isbn) + '-L.jpg';
+        const ok = await new Promise(resolve => {
+          const img = new Image();
+          img.onload = () => resolve(true);
+          img.onerror = () => resolve(false);
+          img.src = ol + '?default=false';
+        }).catch(() => false);
+        if (ok) return ol;
+        // fallback to Google Books
+        try {
+          const resp = await fetch('https://www.googleapis.com/books/v1/volumes?q=isbn:' + encodeURIComponent(isbn));
+          if (!resp.ok) return null;
+          const js = await resp.json();
+          const thumb = js?.items?.[0]?.volumeInfo?.imageLinks?.thumbnail || js?.items?.[0]?.volumeInfo?.imageLinks?.smallThumbnail;
+          if (thumb) return thumb.replace(/^http:/,'https:');
+        } catch(e) {}
+        return null;
+      }
+
+      async function fetchCoverByTitle(title, authors) {
+        try {
+          const q = encodeURIComponent(title + (authors ? ' ' + authors : ''));
+          const resp = await fetch('https://www.googleapis.com/books/v1/volumes?q=' + q + '&maxResults=1');
+          if (!resp.ok) return null;
+          const js = await resp.json();
+          const thumb = js?.items?.[0]?.volumeInfo?.imageLinks?.thumbnail || js?.items?.[0]?.volumeInfo?.imageLinks?.smallThumbnail;
+          if (thumb) return thumb.replace(/^http:/,'https:');
+        } catch(e) {}
+        return null;
+      }
+
+      async function renderBooks() {
+        const root = document.getElementById('books-root');
+        root.innerHTML = '';
+        for (const b of books) {
+          const card = document.createElement('div');
+          card.className = 'book-card';
+          const imgWrap = document.createElement('div');
+          imgWrap.style.minWidth = '100px';
+          imgWrap.style.minHeight = '150px';
+          const placeholder = document.createElement('div');
+          placeholder.className = 'cover-loading';
+          placeholder.innerText = 'Loading';
+          imgWrap.appendChild(placeholder);
+          card.appendChild(imgWrap);
+
+          const meta = document.createElement('div');
+          meta.className = 'book-meta';
+          const titleEl = document.createElement('div'); titleEl.className = 'title'; titleEl.innerText = b.title;
+          const authEl = document.createElement('div'); authEl.className = 'meta'; authEl.innerText = (b.authors || '—');
+          const pubEl = document.createElement('div'); pubEl.className = 'meta'; pubEl.innerText = [b.publisher || '', b.year || ''].filter(Boolean).join(', ');
+          meta.appendChild(titleEl); meta.appendChild(authEl);
+          if (pubEl.innerText) meta.appendChild(pubEl);
+          card.appendChild(meta);
+
+          root.appendChild(card);
+
+          (async () => {
+            try {
+              let url = b.coverUrl || null;
+              if (!url && b.isbn) url = await fetchCoverByISBN(b.isbn);
+              if (!url) url = await fetchCoverByTitle(b.title, b.authors);
+              if (!url) {
+                url = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="220" height="320"><rect width="100%" height="100%" fill="#f3f4f6"/><text x="50%" y="50%" font-size="14" text-anchor="middle" fill="#9ca3af">No cover</text></svg>`);
+              }
+              const img = document.createElement('img');
+              img.alt = b.title + ' cover';
+              img.loading = 'lazy';
+              img.src = url;
+              img.onload = () => {
+                imgWrap.innerHTML = '';
+                imgWrap.appendChild(img);
+              };
+              img.onerror = () => {
+                imgWrap.innerHTML = '';
+                const err = document.createElement('div');
+                err.className = 'cover-loading';
+                err.innerText = 'No cover';
+                imgWrap.appendChild(err);
+              }
+            } catch (err) {
+              imgWrap.innerHTML = '';
+              const err = document.createElement('div');
+              err.className = 'cover-loading';
+              err.innerText = 'No cover';
+              imgWrap.appendChild(err);
+            }
+          })();
+        }
+      }
+
+      // Render on load
+      renderBooks();
+      </script>
+    </section>
+
+    <footer>
+      <div class="meta">Notes: Lists are formatted consistently (author order preserved). For books, supply ISBNs or cover URLs in the <code>books</code> array in the page's script and refresh the page to fetch covers automatically. If you want, send me the book titles/ISBNs and I'll populate the page and return the completed file.</div>
+    </footer>
+  </div>
+</body>
+</html>
 
 
