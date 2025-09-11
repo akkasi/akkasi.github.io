@@ -21,7 +21,7 @@ I am a computer scientist specializing in Natural Language Processing, Generativ
   *Xidian University, Xi'an, China (Fall 2014)* 
 
 - **B.Sc. and M.Sc. in Software Engineering (WES approved)**  
-  *Tehran, Iran* — 2006–2008  
+  *Tehran, Iran* — 2003–2008  
   **CGPA (4.0 scale):** `3.16, 3.63` respectively
 
 - 
