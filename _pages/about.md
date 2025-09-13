@@ -24,7 +24,7 @@ I am a computer scientist specializing in Natural Language Processing, Generativ
   *Tehran, Iran* — 2003–2008  
   **CGPA (4.0 scale):** `3.16, 3.63` respectively
 
-- 
+  
 
 
 ## Postdoctoral Research Appointments
@@ -37,6 +37,5 @@ I am a computer scientist specializing in Natural Language Processing, Generativ
 - ***[Text Analysis and Knowledge Engineering Lab (TakeLab)](https://takelab.fer.hr/#team), University of Zagreb, Zagreb, Croatia* 2017–2018**  
 
 ## News / Updates
-======
+ - [09/01/2025] I joined Carleton University as an Adjunct Professor. 
 
-.......
