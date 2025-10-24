@@ -36,5 +36,14 @@ I am a computer scientist specializing in Natural Language Processing, Generativ
 - ***[Text Analysis and Knowledge Engineering Lab (TakeLab)](https://takelab.fer.hr/#team), University of Zagreb, Zagreb, Croatia* 2017–2018**  
 
 ## News / Updates
- - [09/01/2025] I joined Carleton University as an Adjunct Professor. 
+- [October 2025] Paper Accepted for Publication
+  * Our paper titled "End-to-End Semantically Aware Tactile Generation" has been accepted for publication in the journal Intelligent Systems with Applications.
+- [October 2025] Two papers, X and Y, were presented at the IEEE International Conference on Systems, Man, and Cybernetics (SMC 2025) held in Austria:
+  
+  * Grounded Multi-modal Conversation for Zero-shot Visual Question Answering
+  * TactileNet: Bridging the Accessibility Gap with AI-Generated Tactile Graphics for Individuals with Vision Impairment
+  
+ - [09/01/2025] I joined Carleton University, Ottawa as an Adjunct Professor.
+ - [June 2025] Received IBM Generative AI Engineering – Successfully completed and received the IBM Generative AI Engineering certification.
+ - [05/01/2025] I joined Algonquin College as NLP instructor.
 
