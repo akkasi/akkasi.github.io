@@ -38,7 +38,7 @@ I am a computer scientist specializing in Natural Language Processing, Generativ
 ## News / Updates
 - [October 2025] Paper Accepted for Publication
   * Our paper titled "End-to-End Semantically Aware Tactile Generation" has been accepted for publication in the journal Intelligent Systems with Applications.
-- [October 2025] Two papers, X and Y, were presented at the IEEE International Conference on Systems, Man, and Cybernetics (SMC 2025) held in Austria:
+- [October 2025] Two papers were presented at the IEEE International Conference on Systems, Man, and Cybernetics (SMC 2025) held in Austria:
   
   * Grounded Multi-modal Conversation for Zero-shot Visual Question Answering
   * TactileNet: Bridging the Accessibility Gap with AI-Generated Tactile Graphics for Individuals with Vision Impairment
