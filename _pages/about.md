@@ -36,6 +36,7 @@ I am a computer scientist specializing in Natural Language Processing, Generativ
 - ***[Text Analysis and Knowledge Engineering Lab (TakeLab)](https://takelab.fer.hr/#team), University of Zagreb, Zagreb, Croatia* 2017–2018**  
 
 ## News / Updates
+- [December 2025] Successfully completed the Challenge for the Agentic AI course offered by Hugging Face and earned the official certification. 
 - [October 2025] Paper Accepted for Publication
   * Our paper titled "End-to-End Semantically Aware Tactile Generation" has been accepted for publication in the journal Intelligent Systems with Applications.
 - [October 2025] Two papers were presented at the IEEE International Conference on Systems, Man, and Cybernetics (SMC 2025) held in Austria:
